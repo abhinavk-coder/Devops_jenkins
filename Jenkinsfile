@@ -13,8 +13,9 @@ pipeline {
             }
         }
         stage('Deploy') {
-            
-                sh "javac src/Classes/HelloWorld.java && java src.Classes.Helloworld"
+            steps {
+                javac src/Classes/HelloWorld.java && java src.Classes.Helloworld
+            }
             
         }
     }
