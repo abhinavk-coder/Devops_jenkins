@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'cd src/Classes'
+                sh 'pwd'
                 sh 'javac HelloWorld.java'
             }
         }
