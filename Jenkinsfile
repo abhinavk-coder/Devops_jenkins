@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'javac src/Classes/HelloWorld.java'
             }
         }
         stage('Deploy') {
             steps {
-                javac src/Classes/HelloWorld.java && java src.Classes.Helloworld
+                sh 'java src.Classes.Helloworld'
             }
             
         }
