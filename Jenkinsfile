@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 sleep(10)
-                sh 'pwd'
+                ls -la
                 sleep(15)
                 echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                sh 'pwd'
+                sh 'ls -la'
                 sh 'javac HelloWorld.java'
             }
         }
