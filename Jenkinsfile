@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'javac src/Classes/HelloWorld.java'
+                javac src/Classes/HelloWorld.java
             }
         }
         stage('Deploy') {
