@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 sleep(10)
-                ls -la
                 sleep(15)
                 echo 'Building..'
             }
