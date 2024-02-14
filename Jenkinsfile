@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sleep(10)
-                sleep(15)
+                sh 'pwsh --version'
                 echo 'Building..'
             }
         }
