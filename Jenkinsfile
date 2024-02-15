@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'pwsh --version'
+            
                 echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                sh 'ls -la'
-                sh 'javac HelloWorld.java'
+                
+                sh 'cd src/Classes && javac HelloWorld.java'
             }
         }
         stage('Deploy') {
