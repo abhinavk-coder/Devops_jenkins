@@ -5,13 +5,15 @@ pipeline {
         stage('Build') {
             steps {
             
-                echo 'Building..'
+                echo 'Building.'
+                sh "whoami"
             }
         }
         stage('Test') {
             steps {
                 
                 sh "whoami"
+
             }
         }
         stage('Deploy') {
