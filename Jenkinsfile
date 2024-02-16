@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 
-                sh 'whoami'
+                sh "whoami"
             }
         }
         stage('Deploy') {
