@@ -4,23 +4,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            
-                echo 'Building.'
-                sh "whoami"
+                echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                
-                sh "whoami"
-
+                echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'java src.Classes.HelloWorld'
+                sh "javac src/Classes/HelloWorld.java && java src.Classes.Helloworld"
             }
-            
         }
     }
 }
