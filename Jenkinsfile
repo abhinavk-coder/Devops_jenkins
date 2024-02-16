@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 
-                sh 'cd src/Classes && javac HelloWorld.java'
+                sh 'whoami'
             }
         }
         stage('Deploy') {
