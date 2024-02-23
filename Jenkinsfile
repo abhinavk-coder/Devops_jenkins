@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "cd C:/Program Files/jdk-21.0.2/bin  && javac src/Classes/HelloWorld.java && java src.Classes.Helloworld"
+                bat "cd C:/Program Files/jdk-21.0.2/bin  && mkdir abhinav.txt"
             }
         }
     }
