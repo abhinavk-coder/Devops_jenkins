@@ -17,8 +17,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "copy 'C:/Users/Abhinav/AppData/Local/Jenkins/.jenkins/workspace/HelloWorld C:/Program Files/jdk-21.0.2/bin/' && cd C:/Program Files/jdk-21.0.2/bin/HelloWorld && javac src/Classes/HelloWorld.java && java src.Classes.Helloworld"
+                bat"cd C:"
+                bat"cd Users/Abhinav/AppData/Local/Jenkins/.jenkins/workspace/"
+                bat "copy HelloWorld 'C:/Program Files/jdk-21.0.2/bin/' && cd C:/Program Files/jdk-21.0.2/bin/HelloWorld && javac src/Classes/HelloWorld.java && java src.Classes.Helloworld"
             }
         }
+
     }
 }
