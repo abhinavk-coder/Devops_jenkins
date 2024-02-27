@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "ls"
+                sh "chmod +x src/Classes/HelloWorld.java && chmod +x src/Classes/HelloWorld.class"
                 sh "whoami"
                 sh "pwd"
                 sh "cd ./src/Classes"
