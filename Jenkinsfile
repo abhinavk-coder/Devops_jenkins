@@ -20,7 +20,7 @@ pipeline {
                 sh "ls"
                 sh "javac src/Classes/HelloWorld.java"
                 sh "ls"
-                sh "java src/Classes/Helloworld"
+                sh "java src.Classes.HelloWorld"
             }
         }
     }
