@@ -19,7 +19,6 @@ pipeline {
                 sh "cd /var/jenkins_home/workspace/HelloWorld"
                 sh "whoami"
                 sh "pwd"
-                sh "cd src/Classes"
                 sh "ls"
                 sh "javac HelloWorld.java"
                 sh "ls"
