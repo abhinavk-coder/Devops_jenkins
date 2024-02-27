@@ -15,6 +15,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh "chmod +x src/Classes/HelloWorld.java && chmod +x src/Classes/HelloWorld.class"
+                sh "cp src/Classes/. /var/jenkins_home/workspace/HelloWorld"
+                sh "cd /var/jenkins_home/workspace/HelloWorld"
                 sh "whoami"
                 sh "pwd"
                 sh "cd src/Classes"
