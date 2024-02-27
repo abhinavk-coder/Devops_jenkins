@@ -17,7 +17,7 @@ pipeline {
                 sh "ls"
                 sh "whoami"
                 sh "pwd"
-                sh "cd src/Classes"
+                sh "cd ./src/Classes"
                 sh "ls"
                 sh "javac HelloWorld.java"
                 sh "ls"
