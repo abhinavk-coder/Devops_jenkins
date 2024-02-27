@@ -15,6 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh "ls"
+                sh "whoami"
                 sh "pwd"
                 sh "cd src/Classes"
                 sh "ls"
